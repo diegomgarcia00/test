@@ -1,0 +1,4091 @@
+{
+  "_version": "1.2",
+  "project": {
+    "_id": "651d69e24c2fe90007149efd",
+    "name": "SAP - Google maps",
+    "teamID": "OoEK0P0Pka",
+    "devVersion": "651d69e21a88418e38c357ea",
+    "platform": "webchat",
+    "type": "chat",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "members": [],
+    "linkType": "STRAIGHT",
+    "image": "",
+    "customThemes": [],
+    "apiPrivacy": "private",
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "knowledgeBase": {
+      "documents": {},
+      "settings": {
+        "chunkStrategy": {
+          "type": "recursive_text_splitter",
+          "size": 1200,
+          "overlap": 200
+        },
+        "search": {
+          "limit": 3,
+          "metric": "IP"
+        },
+        "summarization": {
+          "prompt": "",
+          "mode": "prompt",
+          "model": "claude-instant-v1",
+          "temperature": 0.1,
+          "system": "You are an FAQ AI chat assistant. Information will be provided to help answer the user's questions. Always summarize your response to be as brief as possible and be extremely concise. Your responses should be fewer than a couple of sentences."
+        }
+      }
+    },
+    "_version": 1.2,
+    "updatedAt": "2023-10-04T16:50:59.288Z",
+    "creatorID": 195433,
+    "createdAt": "2023-10-04T13:34:26.000Z",
+    "updatedBy": 195433
+  },
+  "version": {
+    "_id": "651d69e21a88418e38c357ea",
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "APIkey",
+      "keywordSearch",
+      "coordinates",
+      "latitude",
+      "longitude",
+      "address",
+      "placeID",
+      "mapsLink",
+      "location1",
+      "location2",
+      "location3",
+      "name1",
+      "name2",
+      "name3",
+      "mapsLink2",
+      "mapsLink3"
+    ],
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "VF.YES",
+          "name": "VF.YES",
+          "inputs": [],
+          "slots": []
+        },
+        {
+          "key": "VF.NO",
+          "name": "VF.NO",
+          "inputs": [],
+          "slots": []
+        },
+        {
+          "key": "None",
+          "name": "None",
+          "inputs": [],
+          "slots": []
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ]
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#2E7FF1",
+        "description": "Our virtual assistant is here to help you.",
+        "feedback": false,
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Starting Template - Webchat",
+        "watermark": true
+      },
+      "platform": "webchat"
+    },
+    "_version": 4.06,
+    "name": "Initial Version",
+    "projectID": "651d69e24c2fe90007149efd",
+    "manualSave": false,
+    "autoSaveFromRestore": false,
+    "topics": [
+      {
+        "sourceID": "651d69e21a88418e38c357eb",
+        "type": "DIAGRAM"
+      }
+    ],
+    "components": [],
+    "rootDiagramID": "651d69e21a88418e38c357eb",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "651d69e21a88418e38c357eb"
+        ],
+        "rootDiagramID": "651d69e21a88418e38c357eb",
+        "updatedAt": "2023-10-04T16:50:59.289Z",
+        "updatedBy": 195433
+      }
+    ],
+    "canvasTemplates": [
+      {
+        "id": "sg9zy34i0",
+        "name": "Basic Conversation Path",
+        "color": "#5b9fd7",
+        "nodeIDs": [
+          "643872d482cf9d2273b905df",
+          "643872d482cf9d2273b905e1",
+          "643872d482cf9d2273b905e3"
+        ]
+      },
+      {
+        "id": "5bgq3341p",
+        "name": "Save Information",
+        "color": "#000000",
+        "nodeIDs": [
+          "6438784f82cf9d2273b90dd4",
+          "6438784f82cf9d2273b90dd6",
+          "6438784f82cf9d2273b90dd8",
+          "6438784f82cf9d2273b90dda"
+        ]
+      },
+      {
+        "id": "byav33785",
+        "name": "API Call Example",
+        "color": null,
+        "nodeIDs": [
+          "645d718f83103cca7a3cecc1",
+          "645d718f83103cca7a3cecc3",
+          "645d718f83103cca7a3cecc5",
+          "645d718f83103cca7a3cecc7"
+        ]
+      }
+    ],
+    "creatorID": 195433,
+    "templateDiagramID": "651d69e21a88418e38c357ec",
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "SAP - Google maps",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "diagramID": "651d69e21a88418e38c357eb",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "slotsMap": {},
+        "extraSlots": [],
+        "extraIntents": [],
+        "usedIntentsSet": [],
+        "platform": "webchat",
+        "goToIntentsSet": [],
+        "products": {},
+        "interfaces": [],
+        "permissions": [],
+        "usedEventsSet": []
+      },
+      "settings": {},
+      "platform": "webchat"
+    }
+  },
+  "diagrams": {
+    "651d69e21a88418e38c357eb": {
+      "_id": "651d69e21a88418e38c357eb",
+      "offsetX": 660.3784532606145,
+      "offsetY": 781.3489202677721,
+      "zoom": 100,
+      "variables": [],
+      "name": "ROOT",
+      "versionID": "651d69e21a88418e38c357ea",
+      "creatorID": 195433,
+      "modified": 1696426466,
+      "intentStepIDs": [],
+      "type": "TOPIC",
+      "menuNodeIDs": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "diagramID": "651d69e21a88418e38c357eb",
+      "nodes": {
+        "start00000000000000000000": {
+          "nodeID": "start00000000000000000000",
+          "type": "start",
+          "coords": [
+            -125.47306657576806,
+            -726.6861503347151
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "651d7e2634de142c5dd36d45",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          }
+        },
+        "651d6a0234de142c5dd36cfa": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://maps.googleapis.com/maps/api/place/nearbysearch/json?keyword={{[keywordSearch].keywordSearch}}&location={{[latitude].latitude}}%2C{{[longitude].longitude}}&rankby=distance&key={{[APIkey].APIkey}}",
+            "body": [],
+            "params": [],
+            "method": "GET",
+            "headers": [],
+            "content": "",
+            "mappings": [
+              {
+                "path": "response.results[0].place_id",
+                "var": "location1"
+              },
+              {
+                "path": "response.results[1].place_id",
+                "var": "location2"
+              },
+              {
+                "path": "response.results[2].place_id",
+                "var": "location3"
+              },
+              {
+                "path": "response.results[0].name",
+                "var": "name1"
+              },
+              {
+                "path": "response.results[1].name",
+                "var": "name2"
+              },
+              {
+                "path": "response.results[2].name",
+                "var": "name3"
+              }
+            ],
+            "bodyType": "formData",
+            "selectedAction": "Make a GET Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "651d94b334de142c5dd36d6d",
+                  "id": "651d6a0234de142c5dd36cfb",
+                  "data": {}
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "651d6a0234de142c5dd36cfc"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "651d6a0234de142c5dd36cfa"
+        },
+        "651d6a0234de142c5dd36cfd": {
+          "type": "block",
+          "data": {
+            "name": "New Block 1",
+            "steps": [
+              "651d6a0234de142c5dd36cfa"
+            ]
+          },
+          "nodeID": "651d6a0234de142c5dd36cfd",
+          "coords": [
+            1844.0452319431824,
+            -567.3751617090085
+          ]
+        },
+        "651d7b3d34de142c5dd36d15": {
+          "type": "setV2",
+          "data": {
+            "name": "",
+            "sets": [
+              {
+                "type": "advance",
+                "variable": "APIkey",
+                "expression": "'AIzaSyCgEj-tk6oSEb_7bNjUe0cSS3NHyCqRsfU'"
+              }
+            ],
+            "title": "Set variables",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "651d7b3d34de142c5dd36d16"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "651d7b3d34de142c5dd36d15"
+        },
+        "651d7b3d34de142c5dd36d18": {
+          "type": "block",
+          "data": {
+            "name": "New Block 1 copy",
+            "color": "",
+            "steps": [
+              "651d7b3d34de142c5dd36d15",
+              "651d7b4034de142c5dd36d21"
+            ]
+          },
+          "nodeID": "651d7b3d34de142c5dd36d18",
+          "coords": [
+            847.2518034082946,
+            -624.6865539024644
+          ]
+        },
+        "651d7b4034de142c5dd36d21": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://maps.googleapis.com/maps/api/geocode/json?address={{[address].address}}&key={{[APIkey].APIkey}}",
+            "body": [],
+            "params": [],
+            "method": "GET",
+            "headers": [],
+            "content": "",
+            "mappings": [
+              {
+                "path": "response.results[0].geometry.location.lat",
+                "var": "latitude"
+              },
+              {
+                "path": "response.results[0].geometry.location.lng",
+                "var": "longitude"
+              }
+            ],
+            "bodyType": "formData",
+            "selectedAction": "Make a GET Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "651d7e3a34de142c5dd36d51",
+                  "id": "651d7b4034de142c5dd36d22",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1013.25,
+                          -396.94
+                        ]
+                      },
+                      {
+                        "point": [
+                          1128.95,
+                          -396.94
+                        ]
+                      },
+                      {
+                        "point": [
+                          1128.95,
+                          -525.02
+                        ]
+                      },
+                      {
+                        "point": [
+                          1244.64,
+                          -525.02
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "651d7b4034de142c5dd36d23"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "651d7b4034de142c5dd36d21"
+        },
+        "651d7e2634de142c5dd36d42": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "address"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "651d7b3d34de142c5dd36d18",
+                  "id": "651d7e2634de142c5dd36d43",
+                  "data": {}
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "651d7e2634de142c5dd36d44"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "651d7e2634de142c5dd36d42",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "651d7e2634de142c5dd36d45": {
+          "type": "block",
+          "data": {
+            "name": "New Block 4",
+            "steps": [
+              "651d7e2c34de142c5dd36d4b",
+              "651d7e2634de142c5dd36d42"
+            ]
+          },
+          "nodeID": "651d7e2634de142c5dd36d45",
+          "coords": [
+            853.6927534439093,
+            -954.0802986434207
+          ]
+        },
+        "651d7e2c34de142c5dd36d4b": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "h01od3u0o",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Type in the address"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "651d7e2c34de142c5dd36d4c"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "651d7e2c34de142c5dd36d4b"
+        },
+        "651d7e3a34de142c5dd36d4f": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "gf1q23u65",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "What do you want to look for nearby?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "651d7e3a34de142c5dd36d50"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "651d7e3a34de142c5dd36d4f"
+        },
+        "651d7e3a34de142c5dd36d51": {
+          "type": "block",
+          "data": {
+            "name": "New Block 5",
+            "steps": [
+              "651d7e3a34de142c5dd36d4f",
+              "651d7e9334de142c5dd36d59"
+            ]
+          },
+          "nodeID": "651d7e3a34de142c5dd36d51",
+          "coords": [
+            1409.6437967825927,
+            -552.0206551526708
+          ]
+        },
+        "651d7e9334de142c5dd36d59": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "keywordSearch"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "651d6a0234de142c5dd36cfd",
+                  "id": "651d7e9334de142c5dd36d5a",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1575.64,
+                          -404.02
+                        ]
+                      },
+                      {
+                        "point": [
+                          1627.34,
+                          -404.02
+                        ]
+                      },
+                      {
+                        "point": [
+                          1627.34,
+                          -540.38
+                        ]
+                      },
+                      {
+                        "point": [
+                          1679.05,
+                          -540.38
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "651d7e9334de142c5dd36d5b"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "651d7e9334de142c5dd36d59",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "651d903d34de142c5dd36d61": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://maps.googleapis.com/maps/api/place/details/json?place_id={{[placeID].placeID}}&fields=name,opening_hours&key={{[APIkey].APIkey}}",
+            "body": [],
+            "params": [],
+            "method": "GET",
+            "headers": [],
+            "content": "",
+            "mappings": [
+              {
+                "path": "response.result",
+                "var": null
+              }
+            ],
+            "bodyType": "formData",
+            "selectedAction": "Make a GET Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "651d903d34de142c5dd36d62"
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "651d903d34de142c5dd36d63"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "651d903d34de142c5dd36d61"
+        },
+        "651d903d34de142c5dd36d64": {
+          "type": "block",
+          "data": {
+            "name": "New Block 5",
+            "steps": [
+              "651d903d34de142c5dd36d61"
+            ]
+          },
+          "nodeID": "651d903d34de142c5dd36d64",
+          "coords": [
+            2778.6032282445767,
+            -667.897213650274
+          ]
+        },
+        "651d94b334de142c5dd36d6b": {
+          "type": "setV2",
+          "data": {
+            "name": "",
+            "sets": [
+              {
+                "type": "advance",
+                "variable": "mapsLink",
+                "expression": "'https://www.google.com/maps/place/?q=place_id:'+{{[location1].location1}}"
+              },
+              {
+                "type": "advance",
+                "variable": "mapsLink2",
+                "expression": "'https://www.google.com/maps/place/?q=place_id:'+{{[location2].location2}}"
+              },
+              {
+                "type": "advance",
+                "variable": "mapsLink3",
+                "expression": "'https://www.google.com/maps/place/?q=place_id:'+\n{{[location3].location3}}"
+              }
+            ],
+            "title": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "651d956e34de142c5dd36d73",
+                  "id": "651d94b334de142c5dd36d6c",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "651d94b334de142c5dd36d6b"
+        },
+        "651d94b334de142c5dd36d6d": {
+          "type": "block",
+          "data": {
+            "name": "New Block 6",
+            "steps": [
+              "651d94b334de142c5dd36d6b"
+            ]
+          },
+          "nodeID": "651d94b334de142c5dd36d6d",
+          "coords": [
+            1870.5938980089577,
+            -221.4925462590897
+          ]
+        },
+        "651d956e34de142c5dd36d73": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "iu37q3u5r",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "We found 3 places nearby."
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "name1",
+                        "name": "name1",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "mapsLink",
+                        "name": "mapsLink",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "name2",
+                        "name": "name2",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "mapsLink2",
+                        "name": "mapsLink2",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "name3",
+                        "name": "name3",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "mapsLink3",
+                        "name": "mapsLink3",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "651e61fdade33175e51148e0",
+                  "id": "651d956e34de142c5dd36d74",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "651d956e34de142c5dd36d73"
+        },
+        "651d956e34de142c5dd36d75": {
+          "type": "block",
+          "data": {
+            "name": "New Block 7",
+            "steps": [
+              "651d956e34de142c5dd36d73"
+            ]
+          },
+          "nodeID": "651d956e34de142c5dd36d75",
+          "coords": [
+            2480.863528585512,
+            -286.4633488952426
+          ]
+        },
+        "651e61fdade33175e51148df": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "651d69e21a88418e38c357eb",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "651e61fdade33175e51148df"
+        },
+        "651e61fdade33175e51148e0": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "651e61fdade33175e51148df"
+            ]
+          },
+          "nodeID": "651e61fdade33175e51148e0",
+          "coords": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "651d69e21a88418e38c357ec": {
+      "_id": "651d69e21a88418e38c357ec",
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "offsetX": 272,
+      "offsetY": 104,
+      "modified": 1696426466,
+      "variables": [],
+      "menuItems": [],
+      "creatorID": 195433,
+      "versionID": "651d69e21a88418e38c357ea",
+      "diagramID": "651d69e21a88418e38c357ec",
+      "nodes": {
+        "6438725334aead00076d562e": {
+          "type": "start",
+          "nodeID": "6438725334aead00076d562e",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#43494E",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "id": "6438725334aead00076d562f",
+                  "type": "next",
+                  "target": null
+                }
+              },
+              "dynamic": []
+            },
+            "steps": []
+          }
+        },
+        "6438725382cf9d2273b90589": {
+          "type": "block",
+          "data": {
+            "name": "Welcome",
+            "color": "",
+            "steps": [
+              "6438725382cf9d2273b9058d",
+              "6438725382cf9d2273b90590"
+            ]
+          },
+          "nodeID": "6438725382cf9d2273b90589",
+          "coords": [
+            -501.3585020507189,
+            -658.0432780543358
+          ]
+        },
+        "6438725382cf9d2273b9058b": {
+          "type": "block",
+          "data": {
+            "name": "AI response output",
+            "color": "#56b365",
+            "steps": [
+              "6438725382cf9d2273b90594"
+            ]
+          },
+          "nodeID": "6438725382cf9d2273b9058b",
+          "coords": [
+            -501.5967776582388,
+            -377.8379726840851
+          ]
+        },
+        "6438725382cf9d2273b9058d": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "s27ac3eqh",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Ask any question",
+                        "fontWeight": "700"
+                      },
+                      {
+                        "text": ", and we'll use the response AI step to provide a contextual response."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6438725382cf9d2273b90590",
+                  "id": "6438725382cf9d2273b9058e"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438725382cf9d2273b9058d"
+        },
+        "6438725382cf9d2273b90590": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6438725382cf9d2273b9058b",
+                  "id": "6438725382cf9d2273b90591",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -667.3584635404925,
+                          -461.54329806524055
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": true,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -691.3584635404925,
+                          -461.54329806524055
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -691.3584635404925,
+                          -401.83801893781236
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -501.59680258692276,
+                          -401.83801893781236
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -501.59680258692276,
+                          -377.83801893781236
+                        ],
+                        "toTop": true,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6438725382cf9d2273b90592"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438725382cf9d2273b90590"
+        },
+        "6438725382cf9d2273b90594": {
+          "type": "generative",
+          "data": {
+            "name": "Response AI",
+            "prompt": "Based on the users response {{[last_utterance].last_utterance}}, respond to the user",
+            "system": "You are a helpful assistant",
+            "maxTokens": 100,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6438725382cf9d2273b90595",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -335.5969201040813,
+                          -275.58805327852497
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -295.1503869009563,
+                          -275.58805327852497
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -295.1503869009563,
+                          -631.39591460665
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -254.70385369783128,
+                          -631.39591460665
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438725382cf9d2273b90594"
+        },
+        "643872d482cf9d2273b905df": {
+          "type": "block",
+          "data": {
+            "name": "Option 2",
+            "color": "",
+            "steps": [
+              "643872d482cf9d2273b905e5"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905df",
+          "coords": [
+            -432.02299332274276,
+            -334.73425308247994
+          ]
+        },
+        "643872d482cf9d2273b905e1": {
+          "type": "block",
+          "data": {
+            "name": "Start Block",
+            "color": "#5b9fd7",
+            "steps": [
+              "643872d482cf9d2273b905e8",
+              "643872d482cf9d2273b905eb"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905e1",
+          "coords": [
+            -845.4801744371416,
+            -539.5792694267975
+          ]
+        },
+        "643872d482cf9d2273b905e3": {
+          "type": "block",
+          "data": {
+            "name": "Option 1",
+            "color": "",
+            "steps": [
+              "643872d482cf9d2273b905f0"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905e3",
+          "coords": [
+            -430.5038187460724,
+            -569.9756266907931
+          ]
+        },
+        "643872d482cf9d2273b905e5": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "lu9tb340d",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Second Option"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905e6"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643872d482cf9d2273b905e5"
+        },
+        "643872d482cf9d2273b905e8": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "929q734a2",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "How can I help you?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643872d482cf9d2273b905eb",
+                  "id": "643872d482cf9d2273b905e9"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643872d482cf9d2273b905e8"
+        },
+        "643872d482cf9d2273b905eb": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "noMatch": null,
+            "buttons": [
+              {
+                "id": "xr9vd34tj",
+                "name": "Path 1",
+                "actions": []
+              },
+              {
+                "id": "cl9vs34c7",
+                "name": "Path 2",
+                "actions": []
+              }
+            ],
+            "noReply": null,
+            "intentScope": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905ec"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "643872d482cf9d2273b905e3",
+                  "id": "643872d482cf9d2273b905ed",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -679.4801667002234,
+                          -399.32923837159325
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -637.4918741411055,
+                          -399.32923837159325
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -637.4918741411055,
+                          -542.9755028741506
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -595.5035815819875,
+                          -542.9755028741506
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "",
+                  "target": "643872d482cf9d2273b905df",
+                  "id": "643872d482cf9d2273b905ee",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -679.4801667002234,
+                          -344.82921901334083
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -638.2515780028617,
+                          -344.82921901334083
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -638.2515780028617,
+                          -307.73401942975823
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -597.0229893055001,
+                          -307.73401942975823
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "643872d482cf9d2273b905eb"
+        },
+        "643872d482cf9d2273b905f0": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ky9ry343w",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "First Option"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905f1"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643872d482cf9d2273b905f0"
+        },
+        "643873be82cf9d2273b90673": {
+          "type": "block",
+          "data": {
+            "name": "If userID does not equal 1234",
+            "color": "",
+            "steps": [
+              "643873be82cf9d2273b9067b"
+            ]
+          },
+          "nodeID": "643873be82cf9d2273b90673",
+          "coords": [
+            -70.18718316214228,
+            -25.420796792411338
+          ]
+        },
+        "643873be82cf9d2273b90675": {
+          "type": "block",
+          "data": {
+            "name": "Use Logic to Route",
+            "color": "#CB627B",
+            "steps": [
+              "643873be82cf9d2273b9067e"
+            ]
+          },
+          "nodeID": "643873be82cf9d2273b90675",
+          "coords": [
+            -471.1075336325476,
+            -185.10154694620218
+          ]
+        },
+        "643873be82cf9d2273b90677": {
+          "type": "block",
+          "data": {
+            "name": "If userID equals 1234",
+            "color": "",
+            "steps": [
+              "643873be82cf9d2273b90682"
+            ]
+          },
+          "nodeID": "643873be82cf9d2273b90677",
+          "coords": [
+            -71.43718316214228,
+            -184.17079679241147
+          ]
+        },
+        "643873be82cf9d2273b90679": {
+          "type": "block",
+          "data": {
+            "name": "Capture Information",
+            "color": "",
+            "steps": [
+              "643873be82cf9d2273b90685",
+              "643873be82cf9d2273b90688"
+            ]
+          },
+          "nodeID": "643873be82cf9d2273b90679",
+          "coords": [
+            -882.7180111791258,
+            -186.51117186930696
+          ]
+        },
+        "643873be82cf9d2273b9067b": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1jabe34gf",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Welcome to Voiceflow user "
+                      },
+                      {
+                        "id": "user_id",
+                        "name": "user_id",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643873be82cf9d2273b9067c"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643873be82cf9d2273b9067b"
+        },
+        "643873be82cf9d2273b9067e": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "If UserID = 1234",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "user_id"
+                      },
+                      {
+                        "type": "value",
+                        "value": "1234"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "path",
+              "pathName": "All other UserIDs"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "643873be82cf9d2273b90673",
+                  "id": "643873be82cf9d2273b9067f",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -305.10758119605924,
+                          -50.851426165918596
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -270.147315082778,
+                          -50.851426165918596
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -270.147315082778,
+                          1.57917686142504
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -235.18704896949674,
+                          1.57917686142504
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "643873be82cf9d2273b90677",
+                  "id": "643873be82cf9d2273b90680",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -305.10758119605924,
+                          -105.35139564834047
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -270.7723150827781,
+                          -105.35139564834047
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -270.7723150827781,
+                          -157.17082313857486
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -236.43704896949686,
+                          -157.17082313857486
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "event": {
+                      "type": "If UserID = 1234"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "643873be82cf9d2273b9067e"
+        },
+        "643873be82cf9d2273b90682": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1jabe34gf",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Welcome back user "
+                      },
+                      {
+                        "id": "user_id",
+                        "name": "user_id",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643873be82cf9d2273b90683"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643873be82cf9d2273b90682"
+        },
+        "643873be82cf9d2273b90685": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "s8a30349g",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "What is your userID?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643873be82cf9d2273b90688",
+                  "id": "643873be82cf9d2273b90686"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643873be82cf9d2273b90685"
+        },
+        "643873be82cf9d2273b90688": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "user_id"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643873be82cf9d2273b90675",
+                  "id": "643873be82cf9d2273b90689",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -716.7179552552856,
+                          -35.01107937987875
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -676.4127121801628,
+                          -35.01107937987875
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -676.4127121801628,
+                          -158.10137487284737
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -636.1074691050399,
+                          -158.10137487284737
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "643873be82cf9d2273b9068a"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643873be82cf9d2273b90688"
+        },
+        "643874b482cf9d2273b90953": {
+          "type": "block",
+          "data": {
+            "name": "Set AI",
+            "color": "#56b365",
+            "steps": [
+              "643874b482cf9d2273b9095b",
+              "643874b482cf9d2273b9095e"
+            ]
+          },
+          "nodeID": "643874b482cf9d2273b90953",
+          "coords": [
+            -321.72987951219045,
+            -63.307659112696115
+          ]
+        },
+        "643874b482cf9d2273b90955": {
+          "type": "block",
+          "data": {
+            "name": "Set AI sample",
+            "color": "",
+            "steps": [
+              "643874b482cf9d2273b90961",
+              "643874b482cf9d2273b90964",
+              "643874b482cf9d2273b90967",
+              "643874b482cf9d2273b9096a"
+            ]
+          },
+          "nodeID": "643874b482cf9d2273b90955",
+          "coords": [
+            -327.19954974607606,
+            -531.5846547683695
+          ]
+        },
+        "643874b482cf9d2273b90957": {
+          "type": "block",
+          "data": {
+            "name": "Welcome",
+            "color": "#000000",
+            "steps": [
+              "643874b482cf9d2273b9096e",
+              "643874b482cf9d2273b90971",
+              "643874b482cf9d2273b90974"
+            ]
+          },
+          "nodeID": "643874b482cf9d2273b90957",
+          "coords": [
+            -759.89470620039,
+            -534.1559019190823
+          ]
+        },
+        "643874b482cf9d2273b90959": {
+          "type": "block",
+          "data": {
+            "name": "AI response output",
+            "color": "#56b365",
+            "steps": [
+              "643874b482cf9d2273b90978"
+            ]
+          },
+          "nodeID": "643874b482cf9d2273b90959",
+          "coords": [
+            -761.5579531610629,
+            -134.2530028839701
+          ]
+        },
+        "643874b482cf9d2273b9095b": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "Classify the users sentiment",
+            "sets": [
+              {
+                "prompt": "using the last response {{[last_response].last_response}}, classify the users sentiment as a single word",
+                "variable": "sentiment"
+              }
+            ],
+            "system": "",
+            "maxTokens": 10,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874b482cf9d2273b9095e",
+                  "id": "643874b482cf9d2273b9095c",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874b482cf9d2273b9095b"
+        },
+        "643874b482cf9d2273b9095e": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "wm8on3eh5",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Based on your input, I classified your sentiment as: "
+                      },
+                      {
+                        "id": "sentiment",
+                        "name": "sentiment",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643874b482cf9d2273b9095f",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -33.0240778694905,
+                          -124.93501293502982
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": true,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -57.0240778694905,
+                          -124.93501293502982
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -57.0240778694905,
+                          -50.434861800112
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          122.77381608300391,
+                          -50.434861800112
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          122.77381608300391,
+                          -6.044306016441283
+                        ],
+                        "toTop": true,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874b482cf9d2273b9095e"
+        },
+        "643874b482cf9d2273b90961": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "xg77r3eyi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "The 'Set AI' step allows you to set variables from a prompt you define."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874b482cf9d2273b90964",
+                  "id": "643874b482cf9d2273b90962"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874b482cf9d2273b90961"
+        },
+        "643874b482cf9d2273b90964": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1l9zc3eha",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "You might be thinking... \"what in the world does that mean?\". Well, lets just test an example."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874b482cf9d2273b90967",
+                  "id": "643874b482cf9d2273b90965"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874b482cf9d2273b90964"
+        },
+        "643874b482cf9d2273b90967": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "s27ac3eqh",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "say anything",
+                        "fontWeight": "700"
+                      },
+                      {
+                        "text": ", and we'll use the 'Set AI' step to classify your sentimet, and map it to a variable"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874b482cf9d2273b9096a",
+                  "id": "643874b482cf9d2273b90968"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874b482cf9d2273b90967"
+        },
+        "643874b482cf9d2273b9096a": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_response"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874b482cf9d2273b90953",
+                  "id": "643874b482cf9d2273b9096b",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -161.1994343750199,
+                          -146.5846603522872
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -137.1994343750199,
+                          -146.5846603522872
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -137.1994343750199,
+                          -87.30750455475197
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -321.7298913547405,
+                          -87.30750455475197
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -321.7298913547405,
+                          -63.30750455475197
+                        ],
+                        "toTop": true,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "643874b482cf9d2273b9096c"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874b482cf9d2273b9096a"
+        },
+        "643874b482cf9d2273b9096e": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "xg77r3eyi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "The 'Response AI' step allows you to dynamically create responses based on a prompt that you define."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874b482cf9d2273b90971",
+                  "id": "643874b482cf9d2273b9096f"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874b482cf9d2273b9096e"
+        },
+        "643874b482cf9d2273b90971": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "s27ac3eqh",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Ask any question",
+                        "fontWeight": "700"
+                      },
+                      {
+                        "text": ", and we'll use the response AI step to provide a contextual response."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874b482cf9d2273b90974",
+                  "id": "643874b482cf9d2273b90972"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874b482cf9d2273b90971"
+        },
+        "643874b482cf9d2273b90974": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874b482cf9d2273b90959",
+                  "id": "643874b482cf9d2273b90975",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -925.8947036771242,
+                          -232.1558252080962
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": true,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -949.8947036771242,
+                          -232.1558252080962
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -949.8947036771242,
+                          -158.25288311712643
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -761.5580320167377,
+                          -158.25288311712643
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -761.5580320167377,
+                          -134.25288311712643
+                        ],
+                        "toTop": true,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "643874b482cf9d2273b90976"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874b482cf9d2273b90974"
+        },
+        "643874b482cf9d2273b90978": {
+          "type": "generative",
+          "data": {
+            "name": "Response AI",
+            "prompt": "Based on the users response {{[last_utterance].last_utterance}}, respond to the user",
+            "system": "You are a helpful assistant",
+            "maxTokens": 100,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874b482cf9d2273b90955",
+                  "id": "643874b482cf9d2273b90979",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -595.5579080797152,
+                          -32.00283908686845
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -543.8787386317132,
+                          -32.00283908686845
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -543.8787386317132,
+                          -504.584540763932
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -492.19956918371133,
+                          -504.584540763932
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874b482cf9d2273b90978"
+        },
+        "643874d182cf9d2273b909e8": {
+          "type": "block",
+          "data": {
+            "name": "Welcome",
+            "color": "#000000",
+            "steps": [
+              "643874d182cf9d2273b909ec",
+              "643874d182cf9d2273b909ef",
+              "643874d182cf9d2273b909f2"
+            ]
+          },
+          "nodeID": "643874d182cf9d2273b909e8",
+          "coords": [
+            -372.37350578661807,
+            -483.0309031257145
+          ]
+        },
+        "643874d182cf9d2273b909ea": {
+          "type": "block",
+          "data": {
+            "name": "AI response output",
+            "color": "#56b365",
+            "steps": [
+              "643874d182cf9d2273b909f6"
+            ]
+          },
+          "nodeID": "643874d182cf9d2273b909ea",
+          "coords": [
+            -374.0367527472909,
+            -83.12800409060253
+          ]
+        },
+        "643874d182cf9d2273b909ec": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "xg77r3eyi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "The 'Response AI' step allows you to dynamically create responses based on a prompt that you define."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874d182cf9d2273b909ef",
+                  "id": "643874d182cf9d2273b909ed"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874d182cf9d2273b909ec"
+        },
+        "643874d182cf9d2273b909ef": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "s27ac3eqh",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Ask any question",
+                        "fontWeight": "700"
+                      },
+                      {
+                        "text": ", and we'll use the response AI step to provide a contextual response."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874d182cf9d2273b909f2",
+                  "id": "643874d182cf9d2273b909f0"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874d182cf9d2273b909ef"
+        },
+        "643874d182cf9d2273b909f2": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874d182cf9d2273b909ea",
+                  "id": "643874d182cf9d2273b909f3",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -538.3737632125188,
+                          -181.03060602450773
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": true,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -562.3737632125188,
+                          -181.03060602450773
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -562.3737632125188,
+                          -107.12783788023637
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -374.0367436587356,
+                          -107.12783788023637
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -374.0367436587356,
+                          -83.12783788023637
+                        ],
+                        "toTop": true,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "643874d182cf9d2273b909f4"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874d182cf9d2273b909f2"
+        },
+        "643874d182cf9d2273b909f6": {
+          "type": "generative",
+          "data": {
+            "name": "Response AI",
+            "prompt": "Based on the users response {{[last_utterance].last_utterance}}, respond to the user",
+            "system": "You are a helpful assistant",
+            "maxTokens": 100,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643874d182cf9d2273b909f7",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -203.5519554349242,
+                          -274.8466263502904
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -163.1054222317992,
+                          -274.8466263502904
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -163.1054222317992,
+                          -630.6544876784154
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -122.6588890286742,
+                          -630.6544876784154
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874d182cf9d2273b909f6"
+        },
+        "643874eb82cf9d2273b909fa": {
+          "type": "block",
+          "data": {
+            "name": "Set AI",
+            "color": "#56b365",
+            "steps": [
+              "643874eb82cf9d2273b909fe",
+              "643874eb82cf9d2273b90a01"
+            ]
+          },
+          "nodeID": "643874eb82cf9d2273b909fa",
+          "coords": [
+            -556.9039789499768,
+            -48.940886202522734
+          ]
+        },
+        "643874eb82cf9d2273b909fc": {
+          "type": "block",
+          "data": {
+            "name": "Set AI sample",
+            "color": "",
+            "steps": [
+              "643874eb82cf9d2273b90a04",
+              "643874eb82cf9d2273b90a07",
+              "643874eb82cf9d2273b90a0a",
+              "643874eb82cf9d2273b90a0d"
+            ]
+          },
+          "nodeID": "643874eb82cf9d2273b909fc",
+          "coords": [
+            -562.3736491838624,
+            -517.2178818581958
+          ]
+        },
+        "643874eb82cf9d2273b909fe": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "Classify the users sentiment",
+            "sets": [
+              {
+                "prompt": "using the last response {{[last_response].last_response}}, classify the users sentiment as a single word",
+                "variable": "sentiment"
+              }
+            ],
+            "system": "",
+            "maxTokens": 10,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874eb82cf9d2273b90a01",
+                  "id": "643874eb82cf9d2273b909ff",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874eb82cf9d2273b909fe"
+        },
+        "643874eb82cf9d2273b90a01": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "wm8on3eh5",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Based on your input, I classified your sentiment as: "
+                      },
+                      {
+                        "id": "sentiment",
+                        "name": "sentiment",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643874eb82cf9d2273b90a02",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -261.0733205415116,
+                          -210.31623474557398
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": true,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -285.0733205415116,
+                          -210.31623474557398
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -285.0733205415116,
+                          -135.81608361065616
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -105.27542658901717,
+                          -135.81608361065616
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -105.27542658901717,
+                          -91.42552782698544
+                        ],
+                        "toTop": true,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874eb82cf9d2273b90a01"
+        },
+        "643874eb82cf9d2273b90a04": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "xg77r3eyi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "The 'Set AI' step allows you to set variables from a prompt you define."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874eb82cf9d2273b90a07",
+                  "id": "643874eb82cf9d2273b90a05"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874eb82cf9d2273b90a04"
+        },
+        "643874eb82cf9d2273b90a07": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1l9zc3eha",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "You might be thinking... \"what in the world does that mean?\". Well, lets just test an example."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874eb82cf9d2273b90a0a",
+                  "id": "643874eb82cf9d2273b90a08"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874eb82cf9d2273b90a07"
+        },
+        "643874eb82cf9d2273b90a0a": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "s27ac3eqh",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "say anything",
+                        "fontWeight": "700"
+                      },
+                      {
+                        "text": ", and we'll use the 'Set AI' step to classify your sentimet, and map it to a variable"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874eb82cf9d2273b90a0d",
+                  "id": "643874eb82cf9d2273b90a0b"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874eb82cf9d2273b90a0a"
+        },
+        "643874eb82cf9d2273b90a0d": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_response"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "643874eb82cf9d2273b909fa",
+                  "id": "643874eb82cf9d2273b90a0e",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -396.3736198152747,
+                          -132.21749310519454
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -372.3736198152747,
+                          -132.21749310519454
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -372.3736198152747,
+                          -72.94085914775496
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -556.9039028482964,
+                          -72.94085914775496
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -556.9039028482964,
+                          -48.94085914775496
+                        ],
+                        "toTop": true,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "643874eb82cf9d2273b90a0f"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "643874eb82cf9d2273b90a0d"
+        },
+        "6438784f82cf9d2273b90dd4": {
+          "type": "block",
+          "data": {
+            "name": "Use Logic to Route",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90ddc"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd4",
+          "coords": [
+            -1964.4846386537488,
+            -626.9744457114995
+          ]
+        },
+        "6438784f82cf9d2273b90dd6": {
+          "type": "block",
+          "data": {
+            "name": "Capture Information",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90de0",
+              "6438784f82cf9d2273b90de3"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd6",
+          "coords": [
+            -2376.095116200327,
+            -628.3840706346044
+          ]
+        },
+        "6438784f82cf9d2273b90dd8": {
+          "type": "block",
+          "data": {
+            "name": "Other names",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90de7"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd8",
+          "coords": [
+            -1563.5642881833433,
+            -467.2936955577087
+          ]
+        },
+        "6438784f82cf9d2273b90dda": {
+          "type": "block",
+          "data": {
+            "name": "Elon Musk",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90dea"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dda",
+          "coords": [
+            -1564.8142881833433,
+            -626.0436955577089
+          ]
+        },
+        "6438784f82cf9d2273b90ddc": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "If name is elon musk",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "name"
+                      },
+                      {
+                        "type": "value",
+                        "value": "elon musk"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "path",
+              "pathName": "All other names"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "6438784f82cf9d2273b90dd8",
+                  "id": "6438784f82cf9d2273b90ddd",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1798.484505972181,
+                          -492.72447921623757
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1763.5243607307511,
+                          -492.72447921623757
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1763.5243607307511,
+                          -440.2937029472216
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1728.5642154893217,
+                          -440.2937029472216
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "6438784f82cf9d2273b90dda",
+                  "id": "6438784f82cf9d2273b90dde",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1798.484505972181,
+                          -547.2244999131336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1764.1493300508728,
+                          -547.2244999131336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1764.1493300508728,
+                          -599.0438504799286
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1729.814154129565,
+                          -599.0438504799286
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "event": {
+                      "type": "If name is elon musk"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90ddc"
+        },
+        "6438784f82cf9d2273b90de0": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "s8a30349g",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "What is your name?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6438784f82cf9d2273b90de3",
+                  "id": "6438784f82cf9d2273b90de1"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90de0"
+        },
+        "6438784f82cf9d2273b90de3": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "name"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6438784f82cf9d2273b90dd4",
+                  "id": "6438784f82cf9d2273b90de4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -2210.0950799471193,
+                          -488.1341077200336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2169.789872823509,
+                          -488.1341077200336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2169.789872823509,
+                          -599.9743336839742
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2129.484665699899,
+                          -599.9743336839742
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90de5"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90de3"
+        },
+        "6438784f82cf9d2273b90de7": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1jabe34gf",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hello "
+                      },
+                      {
+                        "id": "name",
+                        "name": "name",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " !"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90de8"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90de7"
+        },
+        "6438784f82cf9d2273b90dea": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "1jabe34gf",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Twitter is the best 🐦"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90deb"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90dea"
+        },
+        "645d6f1383103cca7a3ce732": {
+          "type": "block",
+          "data": {
+            "name": "Welcome",
+            "color": "#56b365",
+            "steps": [
+              "645d6f1383103cca7a3ce736",
+              "645d6f1383103cca7a3ce739",
+              "645d6f1383103cca7a3ce73c"
+            ]
+          },
+          "nodeID": "645d6f1383103cca7a3ce732",
+          "coords": [
+            -535.4719325269735,
+            -4.484361157018327
+          ]
+        },
+        "645d6f1383103cca7a3ce734": {
+          "type": "block",
+          "data": {
+            "name": "AI response output",
+            "color": "#56b365",
+            "steps": [
+              "645d6f1383103cca7a3ce740"
+            ]
+          },
+          "nodeID": "645d6f1383103cca7a3ce734",
+          "coords": [
+            -537.1351794876463,
+            395.41853787809356
+          ]
+        },
+        "645d6f1383103cca7a3ce736": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "xg77r3eyi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "The 'Response AI' step allows you to dynamically create responses based on a prompt that you define."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d6f1383103cca7a3ce739",
+                  "id": "645d6f1383103cca7a3ce737"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d6f1383103cca7a3ce736"
+        },
+        "645d6f1383103cca7a3ce739": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "s27ac3eqh",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Ask any question",
+                        "fontWeight": "700"
+                      },
+                      {
+                        "text": ", and we'll use the response AI step to provide a contextual response."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d6f1383103cca7a3ce73c",
+                  "id": "645d6f1383103cca7a3ce73a"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d6f1383103cca7a3ce739"
+        },
+        "645d6f1383103cca7a3ce73c": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d6f1383103cca7a3ce734",
+                  "id": "645d6f1383103cca7a3ce73d",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -701.4692078069633,
+                          297.5201460803028
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -725.4692078069633,
+                          297.5201460803028
+                        ]
+                      },
+                      {
+                        "point": [
+                          -725.4692078069633,
+                          371.4201460803028
+                        ]
+                      },
+                      {
+                        "point": [
+                          -537.1392078069632,
+                          371.4201460803028
+                        ]
+                      },
+                      {
+                        "point": [
+                          -537.1392078069632,
+                          395.4201460803029
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "645d6f1383103cca7a3ce73e"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d6f1383103cca7a3ce73c"
+        },
+        "645d6f1383103cca7a3ce740": {
+          "type": "generative",
+          "data": {
+            "name": "Response AI",
+            "prompt": "Based on the users question, respond with two brief sentences.",
+            "system": "You are a helpful assistant",
+            "maxTokens": 100,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "mode": "memory_prompt",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d6f1383103cca7a3ce741",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -366.65038217527956,
+                          203.69991561840578
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -326.20384897215456,
+                          203.69991561840578
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -326.20384897215456,
+                          -152.10794570971922
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -285.75731576902956,
+                          -152.10794570971922
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d6f1383103cca7a3ce740"
+        },
+        "645d718f83103cca7a3cecc1": {
+          "type": "block",
+          "data": {
+            "name": "Fail",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecc9"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc1",
+          "coords": [
+            -943.7641060825457,
+            -726.7018427371622
+          ]
+        },
+        "645d718f83103cca7a3cecc3": {
+          "type": "block",
+          "data": {
+            "name": "API Call",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3ceccc"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc3",
+          "coords": [
+            -1337.282813902139,
+            -902.1537022731807
+          ]
+        },
+        "645d718f83103cca7a3cecc5": {
+          "type": "block",
+          "data": {
+            "name": "Welcome",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecd0",
+              "645d718f83103cca7a3cecd3"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc5",
+          "coords": [
+            -1722.1832079861151,
+            -907.6478276212674
+          ]
+        },
+        "645d718f83103cca7a3cecc7": {
+          "type": "block",
+          "data": {
+            "name": "Success",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecd7"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc7",
+          "coords": [
+            -944.844860096504,
+            -900.8660415973322
+          ]
+        },
+        "645d718f83103cca7a3cecc9": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "u08yz372g",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Error"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecca"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3cecc9"
+        },
+        "645d718f83103cca7a3ceccc": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://api.openai.com/v1/completions",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [],
+            "method": "POST",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "val": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "val": "Bearer <ADD API KEY HERE>"
+              }
+            ],
+            "content": "{\n  \"model\": \"text-davinci-003\",\n  \"prompt\": \"{last_utterance}\",\n  \"max_tokens\": 7,\n  \"temperature\": 0,\n  \"top_p\": 1,\n  \"n\": 1,\n  \"stream\": false,\n  \"logprobs\": null,\n  \"stop\": \"\\n\"\n}",
+            "mappings": [
+              {
+                "path": "response",
+                "var": "response"
+              }
+            ],
+            "bodyType": "rawInput",
+            "selectedAction": "Make a POST Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecd7",
+                  "id": "645d718f83103cca7a3cecce",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1171.2838307947716,
+                          -748.4052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1141.0638307947715,
+                          -748.4052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1141.0638307947715,
+                          -821.3652156062917
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1110.8438307947717,
+                          -821.3652156062917
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "645d718f83103cca7a3cecc9",
+                  "id": "645d718f83103cca7a3ceccd",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1171.2838307947716,
+                          -693.9052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1140.5238307947716,
+                          -693.9052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1140.5238307947716,
+                          -647.2052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1109.7638307947714,
+                          -647.2052156062919
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3ceccc"
+        },
+        "645d718f83103cca7a3cecd0": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "xg77r3eyi",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "This flow captures a users question and sends it to the OpenAI API"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecd3",
+                  "id": "645d718f83103cca7a3cecd1"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3cecd0"
+        },
+        "645d718f83103cca7a3cecd3": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecc3",
+                  "id": "645d718f83103cca7a3cecd4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1556.1838307947714,
+                          -733.6452156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1529.2338307947716,
+                          -733.6452156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1529.2338307947716,
+                          -875.1552156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1502.2838307947716,
+                          -875.1552156062919
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecd5"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3cecd3"
+        },
+        "645d718f83103cca7a3cecd7": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "vh8xb37hw",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": ""
+                      },
+                      {
+                        "id": "response",
+                        "name": "response",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecd8"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3cecd7"
+        }
+      }
+    }
+  },
+  "variableStates": []
+}
